@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.31.245:3306/suzhenchao?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+
+  # thymeleaf 模板引擎配置
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    cache: false
+
+logging:
+  config: classpath:config/logback-spring.xml
+
