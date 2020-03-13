@@ -31,10 +31,11 @@ public class AuthService {
 
     private static Logger logger = LoggerFactory.getLogger(AuthService.class);
 
-    public void getInfo() {
+    public MemberInfoEntity getInfo() {
         List<UserInfoEntity> userInfoEntities = userInfoMapper.selectAll();
         List<MemberInfoEntity> memberInfoEntities = memberInfoMapper.selectAll();
         logger.info("userInfoEntities:{}",userInfoEntities.toString());
         logger.info("memberInfoEntities:{}",memberInfoEntities.toString());
+        return memberInfoEntities.get(0);
     }
 }
