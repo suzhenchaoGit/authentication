@@ -16,7 +16,7 @@ public class AuthenticationApplication {
         logger.info("*****************  正在启动服务，请稍后。 *****************");
         try {
             SpringApplication.run(AuthenticationApplication.class, args);
-            logger.info("*****************  HyErpApplication 服务启动成功！ *****************");
+            logger.info("*****************  AuthenticationApplication 服务启动成功！ *****************");
         } catch (Exception e) {
             logger.error("服务启动失败:{}",e.getMessage(),e);
         }
